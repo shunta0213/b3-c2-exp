@@ -3,10 +3,22 @@
 
 \section{方法}
 
-テスト\ref{eq:ma}
+\subsection{MTJの抵抗測定}\label{subsec:method-mtj-resistance}
+MTJに直流電源、電流計、電圧計を接続し抵抗を測定した。
+直流電源はMTJ素子を壊さないように事前に設定されていた電流値を用いた。
 
-\begin{equation}\label{eq:ma}
-	F = ma
-\end{equation}
+\subsection{励磁電流に対する磁場測定}\label{subsec:method-magnetic-field}
+励磁電流を変化させたときに電磁石で発生する磁場を測定した。
+磁場はガウスメータを使用してもとめた。
+このときに、励磁電流源の設定した値と実際に流れていた値が異なることに注意した。
+また、ヒステリシスループを考慮して、\SI{0}{A}から\SI{7}{A}、\SI{7}{A}から\SI{0}{A}、\SI{0}から\SI{-7}{A}、\SI{-7}{A}から\SI{0}{A}の順に測定を行った。
+
+\subsection{MTJによるTMRの磁場依存性測定}
+MTJに\ref{subsec:method-mtj-resistance}と同様に電源、電流計、電圧計を接続したまま
+磁場を印加し、そのときの抵抗を測定した。
+この時、\ref{subsec:method-magnetic-field}でセットした電流ではなく、実際に流れていた電流にそれぞれ合わせて\footnote{
+	ほぼ全ての測定でセットした電流に合わせれば、実際に流れていた電流は同じであった。
+}測定を行った。
+
 
 \end{document}
