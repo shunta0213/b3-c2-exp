@@ -1,8 +1,9 @@
 \documentclass{jlreq}
 
 \usepackage{src/styles/root}
+\usepackage{biblatex}
 % disable in production
-\usepackage{src/styles/draft}
+% \usepackage{src/styles/draft}
 
 % biblatex
 \addbibresource{src/references.bib}
@@ -13,14 +14,14 @@
 \title{My {\LaTeX} Template}
 \author{shunta0213}
 
-\title{実験テーマ: ここに実験テーマを入力}
-\author{実験者: 実験者名 \\ 共同実験者: 共同実験者名}
+\title{C2: トンネル磁気抵抗効果}
+\author{実験者: 井出駿太 \\ 共同実験者: 伊藤 颯大、稲垣 茉優}
 \date{提出日: \today}
-\teacher{教員名}
-\experimentNumber{番号}
-\dayGroup{曜日・組}
-\experimentDate{実験日}
-\experimentSession{実験回}
+\teacher{\varteacher}
+\experimentNumber{014}
+\dayGroup{火曜}
+\experimentDate{実験日: 5/21}
+\experimentSession{C2}
 \submissionDate{\today}
 
 % Add University, Department, Major in environment variable if you want to use
@@ -28,11 +29,13 @@
 
 \maketitle
 
-
 \subfile{src/sections/intro/intro.tex}
 \subfile{src/sections/principle/principle.tex}
 \subfile{src/sections/method/method.tex}
+
+\clearpage
 \subfile{src/sections/result/result.tex}
+\clearpage
 \subfile{src/sections/consideration/consideration.tex}
 \subfile{src/sections/conclusion/conclusion.tex}
 

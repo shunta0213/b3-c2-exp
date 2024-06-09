@@ -11,10 +11,10 @@
   "files.insertFinalNewline": true,
   // TeX Configs
   "[tex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
   "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
   "latex-workshop.latex.recipe.default": "lualatex",
   "latex-workshop.bibtex-format.sort.enabled": true,
@@ -30,6 +30,10 @@
     {
       "name": "lualatex -> biber -> lualatex*2",
       "tools": ["lualatex", "biber", "lualatex", "lualatex"]
+    },
+    {
+      "name": "biber",
+      "tools": ["biber"]
     }
   ],
   "latex-workshop.latex.outDir": "%DIR%/dist",
